@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  midterm-ios
 //
-//  Created by Matin Salehi on 2019-02-21.
-//  Copyright © 2019 centennial. All rights reserved.
+//  Created by Liam Salehi
+//  Mid-Term Test
+//  SpriteKit Slot Machine
 //
 
 import UIKit
