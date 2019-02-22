@@ -14,7 +14,7 @@
 		2C6A51BA221F83A000053A47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C6A51B8221F83A000053A47 /* Main.storyboard */; };
 		2C6A51BC221F83A400053A47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C6A51BB221F83A400053A47 /* Assets.xcassets */; };
 		2C6A51BF221F83A400053A47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C6A51BD221F83A400053A47 /* LaunchScreen.storyboard */; };
-		2C6A51C7221F84BB00053A47 /* SVLSpriteNodeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6A51C6221F84BB00053A47 /* SVLSpriteNodeButton.swift */; };
+		2C6A51FA221F8D9C00053A47 /* SVLSpriteNodeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6A51F9221F8D9C00053A47 /* SVLSpriteNodeButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 		2C6A51BB221F83A400053A47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C6A51BE221F83A400053A47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C6A51C0221F83A400053A47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2C6A51C6221F84BB00053A47 /* SVLSpriteNodeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVLSpriteNodeButton.swift; sourceTree = "<group>"; };
+		2C6A51F9221F8D9C00053A47 /* SVLSpriteNodeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SVLSpriteNodeButton.swift; path = "../../Simple-Sprite-Kit-Button-Project/SimpleSpriteKitButtonProject/SVLSpriteNodeButton.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +60,12 @@
 		2C6A51AD221F83A000053A47 /* midterm-ios */ = {
 			isa = PBXGroup;
 			children = (
+				2C6A51F9221F8D9C00053A47 /* SVLSpriteNodeButton.swift */,
 				2C6A51AE221F83A000053A47 /* AppDelegate.swift */,
 				2C6A51B0221F83A000053A47 /* GameScene.sks */,
 				2C6A51B4221F83A000053A47 /* GameScene.swift */,
 				2C6A51B6221F83A000053A47 /* GameViewController.swift */,
 				2C6A51B8221F83A000053A47 /* Main.storyboard */,
-				2C6A51C6221F84BB00053A47 /* SVLSpriteNodeButton.swift */,
 				2C6A51BB221F83A400053A47 /* Assets.xcassets */,
 				2C6A51BD221F83A400053A47 /* LaunchScreen.storyboard */,
 				2C6A51C0221F83A400053A47 /* Info.plist */,
@@ -147,7 +147,7 @@
 			files = (
 				2C6A51B5221F83A000053A47 /* GameScene.swift in Sources */,
 				2C6A51B7221F83A000053A47 /* GameViewController.swift in Sources */,
-				2C6A51C7221F84BB00053A47 /* SVLSpriteNodeButton.swift in Sources */,
+				2C6A51FA221F8D9C00053A47 /* SVLSpriteNodeButton.swift in Sources */,
 				2C6A51AF221F83A000053A47 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
