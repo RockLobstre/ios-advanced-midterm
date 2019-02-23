@@ -11,32 +11,38 @@ import GameplayKit
 
 class GameScene: SKScene, SVLSpriteNodeButtonDelegate {
     
-    var addPointsButton: SVLSpriteNodeButton!
-    var endGameButton: SVLSpriteNodeButton!
+    var addPointsButton: MySpriteNodeButton!
+    var endGameButton: MySpriteNodeButton!
     var scoreLabel: SKLabelNode!
     
     var score = 0
-    
+
     override func didMove(to view: SKView) {
         
-        addPointsButton = childNode(withName: "addPointsButton") as? SVLSpriteNodeButton
+        addPointsButton = MySpriteNodeButton(texture: nil, color: .magenta, size: CGSize(width: 300, height: 100))
+        addPointsButton.name = "addPointsButton"
+        addPointsButton.position = CGPoint(x: 0, y: -300)
         addPointsButton.isUserInteractionEnabled = true
         addPointsButton.delegate = self
+        addChild(addPointsButton)
         
-        endGameButton = childNode(withName: "endGameButton") as? SVLSpriteNodeButton
+        endGameButton = MySpriteNodeButton(texture: nil, color: .red, size: CGSize(width: 300, height: 100))
+        endGameButton.name = "endGameButton"
+        endGameButton.position = CGPoint(x: 0, y: -500)
         endGameButton.isUserInteractionEnabled = true
         endGameButton.delegate = self
-
+        addChild(endGameButton)
+        
         scoreLabel = childNode(withName: "scoreLabel") as? SKLabelNode
     }
     
     func addToScore(){
-        score += 1
-        scoreLabel.text = "Score: \(score)"
+        score += 100
+        scoreLabel.text = "Bet: \(score)"
     }
     
     func endGame(){
-        scoreLabel.text = "You Win!"
+        scoreLabel.text = "Jackpot!"
         score = 0
     }
     
@@ -45,7 +51,7 @@ class GameScene: SKScene, SVLSpriteNodeButtonDelegate {
     }
     
     //MARK: - SVLSpriteNodeButtonDelegate
-    func spriteNodeButtonPressed(_ button: SVLSpriteNodeButton) {
+    func spriteNodeButtonPressed(_ button: MySpriteNodeButton) {
         
         switch button {
         case addPointsButton:
